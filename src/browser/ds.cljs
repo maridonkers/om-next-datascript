@@ -40,7 +40,7 @@
                  :app/key :app
                  :app/page "/"
                  :app/locale :nl-NL
-                 :app/logged-in? false
+                 :app/logged-in? true
                  :app/dimensions {:db/id -1000
                                   :dimensions/orientation :landscape
                                   :dimensions/width 1024
