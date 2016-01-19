@@ -2,6 +2,8 @@
   (:require [om.next :as om :refer-macros [defui]]
             [om.dom :as dom]
 
+            [browser.util :as util]
+            
             [browser.parsers.navbar :as navbar-parser]))
 
 ;;-------------------
