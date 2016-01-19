@@ -26,12 +26,13 @@
                   logged-in?]} cmp]
 
       (when logged-in?
-        (dom/a
-         nil
-         #js {:href "#/"
-              :onClick
-              #(let [entity {:db/id app-id}]
-                 (om/transact! this
-                               `[(app/logout ~entity)]))} "Logout"))))))
+        (dom/ul
+         (dom/li (dom/a
+           nil
+           #js {:href "#/"
+                :onClick
+                #(let [entity {:db/id app-id}]
+                   (om/transact! this
+                                 `[(app/logout ~entity)]))} "Logout"))))))))
 
 (def navbar (om/factory Navbar))
